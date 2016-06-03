@@ -5,9 +5,15 @@ import {Component} from 'angular2/core';
     template: `
         <h1>Angular 2 Boilerplate</h1>
         <p>Hello World!</p>
+        {{Ontest()}}
+
         <input type ="text" [ngClass]="{red: true}" [value]= "name" (keyup)="onKeyup(inputElement.value)" #inputElement>
         <p>{{values}}</p>
-        {{Ontest()}}
+        <br>
+        <input type="text" value="" [(ngModel)]="name">
+        <p>
+            Your Name: {{name}}
+        </p>
     `,
 })
 export class AppComponent {

@@ -5,6 +5,14 @@ body {
   font-size: 16px;
 }
 
-.red{
-  color:red;
+.parent {
+  border: 1px solid #666;
+  background-color: #641;
+  padding: 20px;
+}
+.child{
+  border: 2px solid white;
+  background-color: grey;
+  padding: 10px;
+
 }

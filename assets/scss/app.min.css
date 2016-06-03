@@ -1,1 +1,1 @@
-body{padding:32px;margin:32px;font-family:"Roboto", Arial, sans-serif;font-size:16px}.red{color:red}
+body{padding:32px;margin:32px;font-family:"Roboto", Arial, sans-serif;font-size:16px}.parent{border:1px solid #666;background-color:#641;padding:20px}.child{border:2px solid white;background-color:grey;padding:10px}

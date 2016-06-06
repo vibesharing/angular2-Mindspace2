@@ -21,5 +21,11 @@
   ],
   "atom": {
     "rewriteTsconfig": true
-  }
+  },
+  "files": [
+    "./dev/app.component.ts",
+    "./dev/attribute-directives.component.ts",
+    "./dev/boot.ts",
+    "./dev/highlight.directive.ts"
+  ]
 }

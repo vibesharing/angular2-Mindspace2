@@ -1,20 +1,16 @@
-# Angular 2 Beta Boilerplate
+# Angular2 Tutorial
+###Introduction
+>Here is a project based on a Tuto followed with a classmate
 
-## Description
-This repository acts as a very simple Angular 2 Beta Boilerplate with which you can get started developing Angular 2 immediately.
-It is derived from the official Angular 2 Documentation which can be found [here](https://angular.io/docs/ts/latest/quickstart.html).
-## Usage
-Follow the following steps and you're good to go! Important: Typescript and npm has to be installed on your machine!
+Objectives | Success & Inputs
+------------ | -------------
+Work with peers| Code at the same time
+Explain and Help others  with concept | Basic display
+Learn from one-another |  Peer reviews & finding bugs
+Work on a Dayli basis | Keep up the pace
+Explore a new technology on your own| Step by step
 
-1: Clone repo
-```
-git clone https://github.com/mschwarzmueller/angular-2-beta-boilerplate.git
-```
-2: Install packages
-```
-npm install
-```
-3: Start server (includes auto refreshing) and gulp watcher
-```
-npm start
-```
+###Limitations:
+
+-Keep motivation after work
+--> Good to be 2 people on this

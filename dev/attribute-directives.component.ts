@@ -5,7 +5,7 @@ import {HighlightDirective} from './highlight.directive';
   selector: 'my-attributes-directives',
   template: `
   <div myHighlight>
-    Highlight me
+      <p>Highlight me</p>
   </div>
   <br>
   <br>

@@ -1,7 +1,7 @@
-import {Component, EventEmitter} from 'angular2/core';
-
+import {Component,EventEmitter} from 'angular2/core';
+import {ListItem} from './list-item';
 @Component({
-  selector:'shopping-list-new-item',
+  selector:'shopping-list-item',
   template:`
   <div class="input">
     <label for="item-name">Name</label>
@@ -13,17 +13,19 @@ import {Component, EventEmitter} from 'angular2/core';
     <input class="form-control" type="text" id="item-amt" [(ngModel)]='item.amount'>
 
   </div>
-  <button class="btn btn-success"(click)="onClick()">Add Item</button>
+  <button class="btn btn-danger"(click)="onDelete()">Delete</button>
+
   `,
-  outputs: ['itemAdded']
-
+  inputs: ['item'],
+  outputs: ['removed']
 })
-
-export class ShoppingListNewItemComponent{
+export class ShoppingListItemComponent{
   item = {name: '', amount: 0};
-  itemAdded = new EventEmitter<{name: string, amount: number}>();
-  onClick(){
-    this.itemAdded.emit(this.item);
+  removed = new EventEmitter<ListItem>();
+
+  onDelete(){
+    this.removed.emit(this.item);
+
   }
 
 

@@ -1,6 +1,18 @@
 body {
   padding: 32px;
   margin: 32px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: 'Muli', Arial, sans-serif;
   font-size: 16px;
+  background-color: #152836;
+  color: white;
+}
+input{
+  margin-bottom: 5px;
+}
+.list{
+  ul{
+    li{
+      cursor: pointer;
+    }
+  }
 }

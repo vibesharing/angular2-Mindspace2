@@ -4,10 +4,14 @@ import {shoppingListComponent} from './shopping-list.component'
 @Component({
     selector: 'my-app',
     template: `
-        <h1>Angular 2 Boilerplate</h1>
-        <p>Hello World!</p>
+    <div class="row">
+        <h1>Shopping List</h1>
+        <hr />
+
+    </div>
+
         <header>
-            <div class="brand">Shopping List
+            <div class="brand">
 
             </div>
         </header>

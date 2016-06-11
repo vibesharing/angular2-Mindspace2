@@ -7,24 +7,35 @@ import {Component} from 'angular2/core';
       <form (ngSubmit)="onSubmit(f)" #f="ngForm">
         <div>
           <label for="mail">Mail</label>
-          <input ngControl="email" type="text" id="mail"  required>
+          <input ngControl="email" type="text" id="mail"  required #email="ngForm">
+          <span class="validation-error" *ngIf="!email.valid">Not valid</span>
         </div>
         <div>
           <label for="password">Password</label>
-          <input ngControl="password" type="text" id="password"  required>
+          <input ngControl="password" type="text" id="password"  required #password="ngForm">
+          <span class="validation-error" *ngIf="!password.valid">password not valid</span>
+
         </div>
         <div>
           <label for="confirm-password">Confirm password</label>
-          <input ngControl="confirm-password" type="text" id="confirm-password"  required>
+          <input ngControl="confirm-password" type="text" id="confirm-password"  required #confirmPassword="ngForm">
+          <span class="validation-error" *ngIf="!confirmPassword.valid">Confirm password not valid</span>
+
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" [disabled]="!f.valid || password.value !== confirmPassword.value">Submit</button>
 
       </form>
+      <h2>You submitted</h2>
+      <div>Mail: {{user.mail}}</div>
+      <div>Password: {{user.password}}</div>
 
   `
 })
 export class TemplateDrivenFormComponent{
-onSubmit(value){
-  console.log(value.value);
-}
+    user = {mail:'', password:''};
+    onSubmit(form){
+      this.user.mail = form.value['email'];
+      this.user.password = form.controls['password'].value;
+    }
+
 }

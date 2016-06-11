@@ -15,6 +15,7 @@ import {shoppingListComponent} from './shopping-list.component'
             <shopping-list></shopping-list>
 
         </div>
+
     `,
     directives: [shoppingListComponent]
 })

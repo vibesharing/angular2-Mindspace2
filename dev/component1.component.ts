@@ -5,7 +5,7 @@ import {LoggingService} from './services/logging.service'
   selector: 'component-1',
   template: `
   <input type="text" #message>
-  <button type="button" name="button" (click)="onLog(message.value)"></button>
+  <button type="button" name="button" (click)="onLog(message.value)">Log</button>
   `,
   providers: [LoggingService]
 

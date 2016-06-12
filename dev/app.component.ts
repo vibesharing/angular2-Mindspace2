@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
-import {shoppingListComponent} from './shopping-list.component'
+import {shoppingListComponent} from './shopping-list/shopping-list.component'
 
 @Component({
     selector: 'my-app',

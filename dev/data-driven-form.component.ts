@@ -48,10 +48,15 @@ export class DataDrivenFormComponent implements OnInit{
     ngOnInit():any {
       this.myForm = this._formBuilder.group({
         'email': ['', Validators.required],
-        'password': ['', Validators.required],
+        'password': ['', Validators.compose([Validators.required, hasNumbers])],
         'confirmPassword': ['', Validators.required],
 
       });
     }
 
+}
+function hasNumbers(control: Control): {[s: string]; boolean}{
+  if (!control.value.match('\\d+')){
+    return {noNumbers: true};
+  }
 }

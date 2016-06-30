@@ -22,7 +22,7 @@ import {Component1Component} from './component1.component'
 })
 @RouteConfig([
     {
-    path: '/component-1/:source',
+    path: '/component-1/:source/...',
     name: 'Component1',
     component: Component1Component,
 

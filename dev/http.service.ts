@@ -12,6 +12,7 @@ export class HttpService{
     }
     createPost(post: {name: string, number: string}): Observable<any>{
       const body = JSON.stringify(post);
+      console.log(body);
       let headers = new Headers();
       headers.append('content-Type','application/x-www-urlencoded');
       return this._http.post('http://localhost:8000/phones', body, {

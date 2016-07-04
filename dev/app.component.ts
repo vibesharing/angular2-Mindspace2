@@ -38,8 +38,8 @@ onGetPosts(){
     )
 
 }
-onPost(name: string, numberr: string){
-    this._httpService.createPost({name: name, number: numberr})
+onPost(name: string, number: string){
+    this._httpService.createPost({name: name, number: number})
     .subscribe(
         response => this.response = response,
         error => console.log(error)
